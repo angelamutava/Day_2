@@ -24,9 +24,9 @@ try:
     
     for recipient in results:
         # status is either "Success" or "error message"
-        print ('number=%s;status=%s;messageId=%s;cost=%s' % (recipient['number'],
+        print 'number=%s;status=%s;messageId=%s;cost=%s' % (recipient['number'],
                                                             recipient['status'],
                                                             recipient['messageId'],
-                                                            recipient['cost']))
+                                                            recipient['cost'])
 except AfricasTalkingGatewayException as e:
-	print ('Encountered an error while sending: %s' % str(e))
+	print 'Encountered an error while sending: %s' % str(e)
